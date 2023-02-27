@@ -1,38 +1,45 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+h1 {
   text-align: center;
+  font-family: "Comfortaa", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: "Comfortaa", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dog-app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 50px;
+}
+
+.image-container {
+  width: 350px;
+  height: 350px;
+  border: 3px solid rgb(128, 106, 106);
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  background-color: hsl(244, 80%, 60%);
+  border: none;
   color: white;
+  cursor: pointer;
+  font-family: "Comfortaa", cursive;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  filter: brightness(90%);
 }
